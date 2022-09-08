@@ -88,11 +88,20 @@ a {
 .social {
   display: flex;
   position: absolute;
-  top: 80px;
+  top: 140px;
   right: 80px;
   align-items: space-between;
 }
 
+.sec1-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.fa {
+  transform: scale(1.5);
+  height: 85px;
+}
 .footer-right {
   display: flex;
   flex-direction: column;
@@ -186,4 +195,55 @@ a {
   position: relative;
   top: 350px;
   right: 160px;
+}
+
+@media screen and (max-width: 1100px) {
+  .main-img {
+    height: 100vh;
+  }
+  .hero {
+    float: left;
+    position: absolute;
+    right: 180px;
+    bottom: 590px;
+    transform: scale(0.5);
+  }
+  .logo {
+    position: relative;
+    bottom: 40px;
+    left: 20px;
+  }
+
+  .fa {
+    height: 60px;
+  }
+
+  .social {
+    display: flex;
+    position: absolute;
+    top: 120px;
+    right: 0px;
+    align-items: center;
+  }
+
+  .pkg-btn {
+    position: relative;
+    left: 210px;
+    top: 260px;
+    margin-top: 10px;
+  }
+
+  .bottom-left {
+    position: relative;
+    top: 250px;
+    left: 150px;
+    transform: scale(0.7);
+  }
+
+  .bottom-right {
+    position: relative;
+    top: 200px;
+    left: 80px;
+    transform: scale(0.7);
+  }
 }
